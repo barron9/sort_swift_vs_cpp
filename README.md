@@ -1,4 +1,4 @@
 # sort_swift_vs_cpp
 
-(Swift)Execution Time: 253442.125 microseconds
-(CPP)Execution time: 44250 microseconds
+(Swift)Execution Time: 245535.167 microseconds
+(CPP)Execution time: 26894 microseconds

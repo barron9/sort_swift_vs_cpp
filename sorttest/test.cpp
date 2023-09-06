@@ -31,8 +31,7 @@ TestCppClass::TestCppClass() {
     std::uniform_int_distribution<int> distribution(1, 200000);
     
 
-    // Start the timer
-    auto start = std::chrono::high_resolution_clock::now();
+ 
 
     // You can initialize the array elements if needed
     for (int i = n; i > 0; --i) {
@@ -41,7 +40,8 @@ TestCppClass::TestCppClass() {
         vec.push_back(randomNumber);
         //myset.insert(randomNumber);
     }
-    
+    // Start the timer
+    auto start = std::chrono::high_resolution_clock::now();
     
     std::sort(vec.begin(), vec.end(), compareDecreasing);
     std::vector<int>::iterator newEnd = std::unique(vec.begin(), vec.end());

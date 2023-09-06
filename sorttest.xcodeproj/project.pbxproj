@@ -32,6 +32,7 @@
 		0638D2E82AA88EC200B16B08 /* testWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = testWrapper.mm; sourceTree = "<group>"; };
 		0638D2EA2AA88ED500B16B08 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		0638D2EB2AA88ED500B16B08 /* test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
+		0638D2ED2AA8993800B16B08 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		0638D2DE2AA8879D00B16B08 /* sorttest */ = {
 			isa = PBXGroup;
 			children = (
+				0638D2ED2AA8993800B16B08 /* README.md */,
 				0638D2DF2AA8879D00B16B08 /* main.swift */,
 				0638D2E72AA88EC200B16B08 /* testWrapper.h */,
 				0638D2E82AA88EC200B16B08 /* testWrapper.mm */,
