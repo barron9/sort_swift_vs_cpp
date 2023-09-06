@@ -12,7 +12,7 @@
 #include <string>
 class TestCppClass {
 public:
- TestCppClass();
+ TestCppClass(std::vector<int> vec);
  ~TestCppClass();
 
 };

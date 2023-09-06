@@ -18,10 +18,10 @@ std::set<int> myset;
 
 bool compareDecreasing(int a, int b);
 
-TestCppClass::TestCppClass() {
+TestCppClass::TestCppClass(std::vector<int> vec) {
     
     int n;
-    n = 200000;
+    n = vec.size();
     int myArray[n];
     // Create a random number generator engine
     std::random_device rd; // Obtain a random seed from the hardware
@@ -34,10 +34,10 @@ TestCppClass::TestCppClass() {
  
 
     // You can initialize the array elements if needed
-    for (int i = n; i > 0; --i) {
+    for (int i = n; i > n-1; --i) {
         // Generate random numbers
-        int randomNumber = distribution(gen);
-        vec.push_back(randomNumber);
+        //int randomNumber = distribution(gen);
+        //vec.push_back(arr[i]);
         //myset.insert(randomNumber);
     }
     // Start the timer

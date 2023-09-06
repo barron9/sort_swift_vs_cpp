@@ -31,4 +31,4 @@ let randomArray = generateRandomArray(count: 200000)
 let resultArray = filterAndSort(arr: randomArray)
 
 
-_ = testWrapper()
+_ = testWrapper(randomArray)

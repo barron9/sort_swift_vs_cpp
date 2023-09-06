@@ -62,9 +62,9 @@
             filePath = "sorttest/testWrapper.mm"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "-init"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-init:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -110,8 +110,8 @@
             filePath = "sorttest/testWrapper.mm"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "testWrapper"
             landmarkType = "3">
          </BreakpointContent>
@@ -128,8 +128,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "TestCppClass::~TestCppClass()"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "02946C37-77FF-4747-BB4A-E8DE80EE6A08 - 6ea6d38c7bbcae8e"

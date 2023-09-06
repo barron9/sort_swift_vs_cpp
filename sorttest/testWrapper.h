@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface testWrapper : NSObject
-- (instancetype)init;
+- (instancetype)init:(NSArray*)arr;
 @end
 
 NS_ASSUME_NONNULL_END
