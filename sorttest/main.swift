@@ -4,7 +4,7 @@ import Foundation
 func generateRandomArray(count: Int) -> [Int] {
     var randomArray = [Int]()
     for _ in 0..<count {
-        randomArray.append(Int.random(in: 1...200000))
+        randomArray.append(Int.random(in: 1...2000000))
     }
     return randomArray
 }
@@ -26,7 +26,7 @@ func filterAndSort(arr: [Int]) -> [Int] {
     return sortedArray
 }
 
-let randomArray = generateRandomArray(count: 200000)
+let randomArray = generateRandomArray(count: 2000000)
 
 let resultArray = filterAndSort(arr: randomArray)
 

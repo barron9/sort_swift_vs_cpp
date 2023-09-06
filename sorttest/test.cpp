@@ -44,8 +44,8 @@ TestCppClass::TestCppClass(std::vector<int> vec) {
     auto start = std::chrono::high_resolution_clock::now();
     
     std::sort(vec.begin(), vec.end(), compareDecreasing);
-    std::vector<int>::iterator newEnd = std::unique(vec.begin(), vec.end());
-    vec.erase(newEnd, vec.end());
+   // std::vector<int>::iterator newEnd = std::unique(vec.begin(), vec.end());
+   // vec.erase(newEnd, vec.end());
     
     // Stop the timer
     auto stop = std::chrono::high_resolution_clock::now();
