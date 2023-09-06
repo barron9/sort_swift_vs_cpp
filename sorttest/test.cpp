@@ -53,7 +53,7 @@ TestCppClass::TestCppClass() {
     // Calculate the duration in microseconds
     auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start);
     
-    std::cout << "Execution time: " << duration.count() << " microseconds" << std::endl;
+    std::cout << "(CPP)Execution time: " << duration.count() << " microseconds" << std::endl;
 }
 TestCppClass::~TestCppClass() {}
 

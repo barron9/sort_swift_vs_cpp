@@ -21,7 +21,7 @@ func filterAndSort(arr: [Int]) -> [Int] {
     let nanoTime = endTime.uptimeNanoseconds - startTime.uptimeNanoseconds
     let elapsedTime = Double(nanoTime) / 1_000
 
-    print("Sorting CPU Time: \(elapsedTime) microseconds")
+    print("(Swift)Execution Time: \(elapsedTime) microseconds")
 
     return sortedArray
 }
