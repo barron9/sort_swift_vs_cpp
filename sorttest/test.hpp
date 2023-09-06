@@ -13,14 +13,8 @@
 class TestCppClass {
 public:
  TestCppClass();
- TestCppClass(const std::string &title);
  ~TestCppClass();
-public:
-void setTitle(const std::string &title);
-const std::string &getTtile();
 
-private:
-std::string m_title;
 };
 
 #endif /* test_hpp */

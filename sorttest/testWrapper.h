@@ -10,9 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface testWrapper : NSObject
-- (instancetype)initWithTitle:(NSString*)title;
-- (NSString*)getTitle;
-- (void)setTitle:(NSString*)title;
+- (instancetype)init;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,19 +11,12 @@
 @property TestCppClass *cppItem;
 @end
 @implementation testWrapper
-- (instancetype)initWithTitle:(NSString*)title
+- (instancetype)init
 {
  if (self = [super init]) {
-self.cppItem = new TestCppClass(std::string([title cStringUsingEncoding:NSUTF8StringEncoding]));
+self.cppItem = new TestCppClass();
  }
  return self;
 }
-- (NSString*)getTitle
-{
-return [NSString stringWithUTF8String:self.cppItem->getTtile().c_str()];
-}
-- (void)setTitle:(NSString*)title
-{
-self.cppItem->setTitle(std::string([title cStringUsingEncoding:NSUTF8StringEncoding]));
-}
+
 @end
