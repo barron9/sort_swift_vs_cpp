@@ -30,5 +30,13 @@ let randomArray = generateRandomArray(count: 200000)
 
 let resultArray = filterAndSort(arr: randomArray)
 
+////in tihs one also consider  including vector converts & parses
+let startTime = DispatchTime.now()
 
 _ = testWrapper(randomArray)
+
+let endTime = DispatchTime.now()
+let nanoTime = endTime.uptimeNanoseconds - startTime.uptimeNanoseconds
+let elapsedTime = Double(nanoTime) / 1_000
+print("(CPP(Include.Parses))Execution Time: \(elapsedTime) microseconds")
+
