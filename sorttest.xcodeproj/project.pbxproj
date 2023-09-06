@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0638D2E02AA8879D00B16B08 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0638D2DF2AA8879D00B16B08 /* main.swift */; };
+		0638D2E92AA88EC200B16B08 /* testWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0638D2E82AA88EC200B16B08 /* testWrapper.mm */; };
+		0638D2EC2AA88ED500B16B08 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0638D2EA2AA88ED500B16B08 /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		0638D2DC2AA8879D00B16B08 /* sorttest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sorttest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0638D2DF2AA8879D00B16B08 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0638D2E62AA88EC100B16B08 /* sorttest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sorttest-Bridging-Header.h"; sourceTree = "<group>"; };
+		0638D2E72AA88EC200B16B08 /* testWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testWrapper.h; sourceTree = "<group>"; };
+		0638D2E82AA88EC200B16B08 /* testWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = testWrapper.mm; sourceTree = "<group>"; };
+		0638D2EA2AA88ED500B16B08 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		0638D2EB2AA88ED500B16B08 /* test.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				0638D2DF2AA8879D00B16B08 /* main.swift */,
+				0638D2E72AA88EC200B16B08 /* testWrapper.h */,
+				0638D2E82AA88EC200B16B08 /* testWrapper.mm */,
+				0638D2E62AA88EC100B16B08 /* sorttest-Bridging-Header.h */,
+				0638D2EA2AA88ED500B16B08 /* test.cpp */,
+				0638D2EB2AA88ED500B16B08 /* test.hpp */,
 			);
 			path = sorttest;
 			sourceTree = "<group>";
@@ -94,6 +106,7 @@
 				TargetAttributes = {
 					0638D2DB2AA8879D00B16B08 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -121,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0638D2E02AA8879D00B16B08 /* main.swift in Sources */,
+				0638D2E92AA88EC200B16B08 /* testWrapper.mm in Sources */,
+				0638D2EC2AA88ED500B16B08 /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +258,11 @@
 		0638D2E42AA8879D00B16B08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sorttest/sorttest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -252,8 +270,10 @@
 		0638D2E52AA8879D00B16B08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sorttest/sorttest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
