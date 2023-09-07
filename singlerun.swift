@@ -4,7 +4,7 @@ import Foundation
 func generateRandomArray(count: Int) -> [Int] {
     var randomArray = [Int]()
     for _ in 0..<count {
-        randomArray.append(Int.random(in: 1...20000))
+        randomArray.append(Int.random(in: 1...2000000))
     }
     return randomArray
 }
@@ -16,11 +16,7 @@ func filterAndSort(arr: [Int]) -> [Int] {
    // let filteredArray = arr.filter { $0 % 2 == 0 } // Example filter condition
 
     let sortedArray = arr.sorted(by: >) // Sort in decreasing order
-    let uniqueNumbers = sortedArray.reduce(into: [Int]()) { (result, number) in
-        if !result.contains(number) {
-            result.append(number)
-        }
-    }
+
     let endTime = DispatchTime.now()
     let nanoTime = endTime.uptimeNanoseconds - startTime.uptimeNanoseconds
     let elapsedTime = Double(nanoTime) / 1_000
@@ -33,14 +29,3 @@ func filterAndSort(arr: [Int]) -> [Int] {
 let randomArray = generateRandomArray(count: 2000000)
 
 let resultArray = filterAndSort(arr: randomArray)
-
-////in tihs one also consider  including vector converts & parses
-let startTime = DispatchTime.now()
-
-_ = testWrapper(randomArray)
-
-let endTime = DispatchTime.now()
-let nanoTime = endTime.uptimeNanoseconds - startTime.uptimeNanoseconds
-let elapsedTime = Double(nanoTime) / 1_000
-print("(CPP(Include.Parses))Execution Time: \(elapsedTime) microseconds")
-
