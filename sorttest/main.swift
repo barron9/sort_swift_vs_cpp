@@ -4,7 +4,7 @@ import Foundation
 func generateRandomArray(count: Int) -> [Int] {
     var randomArray = [Int]()
     for _ in 0..<count {
-        randomArray.append(Int.random(in: 1...20000))
+        randomArray.append(Int.random(in: 1...2000))
     }
     return randomArray
 }
@@ -18,9 +18,10 @@ func filterAndSort(arr: [Int]) -> [Int] {
     let sortedArray = arr.sorted(by: >) // Sort in decreasing order
     var count = 0
     _ = sortedArray.reduce(into: [Int]()) { (result, number) in
-        if count>0 && result[count] != result[count-1]  {
+        if count>0 && sortedArray[count] != sortedArray[count-1]  {
             result.append(number)
         }
+        count += 1
     }
     let endTime = DispatchTime.now()
     let nanoTime = endTime.uptimeNanoseconds - startTime.uptimeNanoseconds
@@ -31,7 +32,7 @@ func filterAndSort(arr: [Int]) -> [Int] {
     return sortedArray
 }
 
-let randomArray = generateRandomArray(count: 200000)
+let randomArray = generateRandomArray(count: 2000000)
 
 let resultArray = filterAndSort(arr: randomArray)
 

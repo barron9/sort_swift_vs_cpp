@@ -16,6 +16,13 @@ func filterAndSort(arr: [Int]) -> [Int] {
    // let filteredArray = arr.filter { $0 % 2 == 0 } // Example filter condition
 
     let sortedArray = arr.sorted(by: >) // Sort in decreasing order
+    var count = 0
+    _ = sortedArray.reduce(into: [Int]()) { (result, number) in
+        if count>0 && sortedArray[count] != sortedArray[count-1]  {
+            result.append(number)
+        }
+        count += 1
+    }
 
     let endTime = DispatchTime.now()
     let nanoTime = endTime.uptimeNanoseconds - startTime.uptimeNanoseconds
