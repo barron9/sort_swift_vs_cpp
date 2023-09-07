@@ -30,7 +30,7 @@ func filterAndSort(arr: [Int]) -> [Int] {
     return sortedArray
 }
 
-let randomArray = generateRandomArray(count: 2000000)
+let randomArray = generateRandomArray(count: 200000)
 
 let resultArray = filterAndSort(arr: randomArray)
 
