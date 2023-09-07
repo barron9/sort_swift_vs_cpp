@@ -5,6 +5,7 @@
 Swift's filter & cpp's unique+erase followed by Swift's (timsort) & cpp's vector.sort(introsort)
 
 ###### some results:
-* (Swift)Execution Time: 9745086.542 microseconds
-* (CPP)Execution time: 107225 microseconds
-* (CPP(Include.Parses))Execution Time: 374919.375 microseconds
+* (Swift)Execution Time: 970494.917 microseconds
+* (CPP)Execution time: 11514 microseconds
+* (CPP(Include.Parses))Execution Time: 36397.834 microseconds
+
